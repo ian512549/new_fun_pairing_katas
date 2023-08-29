@@ -16,6 +16,7 @@ describe("sumDigits()",() => {
     const actual = sumDigits(1)
     const expected = 1
     expect(actual).toBe(expected)
+    expect(sumDigits(9)).toBe(9)
   })
   test("returns the input number when passed a single digit number", () => {
     const actual = sumDigits(9)
@@ -34,7 +35,7 @@ describe("sumDigits()",() => {
 
   HINT: Remember to see the test *fail* first, then write the code to pass the test
 
-  Why this test?  
+  Why this test?  npm 
   A multi-digit input means you now have to implement to 'addition' part of this 
   function, but you don't have to think about the logic for dealing with/ignoring 
   non-digit characters yet (that's for our next test!)
@@ -44,11 +45,9 @@ describe("sumDigits()", () => {
     const actual = sumDigits(99)
     const expected = 18
     expect(actual).toBe(expected)
-  })
-  test("Adds multiple digits and returns the sum", () => {
-    const actual = sumDigits(123)
-    const expected = 6
-    expect(actual).toBe(expected)
+    const actual2 = sumDigits(123)
+    const expected2 = 6
+    expect(actual2).toBe(expected2)
   })
 })
 
